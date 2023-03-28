@@ -1,0 +1,32 @@
+cmake_minimum_required(VERSION 3.24)
+project(DXMathKit)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_library(${PROJECT_NAME})
+target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/DXMathKit ${CMAKE_CURRENT_SOURCE_DIR}/thirdparty/DirectXMath/Inc)
+set(PUBLIC_HEADERS 
+    ${CMAKE_CURRENT_SOURCE_DIR}/DXMathKit/DXMathKit.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/DXMathKit/DXMMatrix.h)
+
+set(PUBLIC_SOURCES
+    ${CMAKE_CURRENT_SOURCE_DIR}/DXMathKit/DXMMatrix.mm)
+
+target_sources(${PROJECT_NAME} PUBLIC
+    ${PUBLIC_HEADERS} ${PUBLIC_SOURCES})
+set_source_files_properties(${PUBLIC_HEADERS}
+    PROPERTIES
+    XCODE_FILE_ATTRIBUTES "Public"
+    MAXOSX_PACKAGE_LOCATION "Headers/DXMathKit")
+
+set_target_properties(${PROJECT_NAME}
+    PROPERTIES
+    FRAMEWORK TRUE
+    FRAMEWORK_VERSION A
+    XCODE_GENERATE_SCHEME YES
+    MACOSX_FRAMEWORK_IDENTIFIER com.mpg.DXMathKit
+    XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.mpg.DXMathKit
+    VERSION 1.0.0
+    SOVERSION 1.0.0
+    PUBLIC_HEADER DXMathKit.h)
+
