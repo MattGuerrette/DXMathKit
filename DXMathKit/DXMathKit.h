@@ -13,6 +13,7 @@ FOUNDATION_EXPORT double DXMathKitVersionNumber;
 //! Project version string for DXMathKit.
 FOUNDATION_EXPORT const unsigned char DXMathKitVersionString[];
 
+FOUNDATION_EXPORT bool DXMVerifyCPUSupport();
+
 // In this header, you should import all the public headers of your framework using statements like #import <DXMathKit/PublicHeader.h>
 #import <DXMathKit/DXMMatrix.h>
-

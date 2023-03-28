@@ -15,6 +15,7 @@
 		A751C86729D3331600A134ED /* DXMMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = A751C86429D3330100A134ED /* DXMMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A751C86829D3331A00A134ED /* DXMathConv.h in Headers */ = {isa = PBXBuildFile; fileRef = A751C86329D332B600A134ED /* DXMathConv.h */; };
 		A751C86A29D333C200A134ED /* sal.h in Headers */ = {isa = PBXBuildFile; fileRef = A751C86929D333C100A134ED /* sal.h */; };
+		A751C86E29D341AF00A134ED /* DXMathKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = A751C86D29D341AF00A134ED /* DXMathKit.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		A751C86429D3330100A134ED /* DXMMatrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXMMatrix.h; sourceTree = "<group>"; };
 		A751C86529D3331300A134ED /* DXMMatrix.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DXMMatrix.mm; sourceTree = "<group>"; };
 		A751C86929D333C100A134ED /* sal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sal.h; sourceTree = "<group>"; };
+		A751C86D29D341AF00A134ED /* DXMathKit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DXMathKit.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		A751C84B29D3317200A134ED /* DXMathKit */ = {
 			isa = PBXGroup;
 			children = (
+				A751C86D29D341AF00A134ED /* DXMathKit.mm */,
 				A751C86929D333C100A134ED /* sal.h */,
 				A751C84C29D3317200A134ED /* DXMathKit.h */,
 				A751C84D29D3317200A134ED /* DXMathKit.docc */,
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A751C86E29D341AF00A134ED /* DXMathKit.mm in Sources */,
 				A751C86629D3331300A134ED /* DXMMatrix.mm in Sources */,
 				A751C84E29D3317200A134ED /* DXMathKit.docc in Sources */,
 			);
